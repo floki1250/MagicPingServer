@@ -7,7 +7,7 @@ const server = app.listen(3000);
 
 // PeerJS server middleware
 const peerServer = ExpressPeerServer(server, {
-  path: "/server",
+  path: "/",
   allow_discovery: true,
   generateClientId: customGenerationFunction,
 });
